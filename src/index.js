@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Base from './Components/side';
+import {story} from './Components/side_story';
 import reportWebVitals from './reportWebVitals';
+import 'tachyons'
+import App  from './Components/canvas'
+import {Mappage, Homepage} from './Components/map'
+import Landings from './Components/landing'
+
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
+  <React.StrictMode> 
+    <Homepage/>
+    <Mappage/>       
   </React.StrictMode>
 );
 
